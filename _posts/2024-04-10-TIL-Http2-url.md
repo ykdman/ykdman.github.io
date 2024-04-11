@@ -86,16 +86,16 @@ tags:
 - 리소스 요청시에 사용할 `프로토콜` 을 정의한다.
 - 스킴의 종류
 
-  | 이름 |  | 예시 |
+  | 이름 |
   | ---- || --- |
-  | http        | ||
-  | https       | ||
-  | mailto      | ||
-  | ftp         | ||
-  | rtsp, rtspu | ||
-  | file        | ||
-  | news        | ||
-  | telnet      | ||
+  | http        |
+  | https       |
+  | mailto      |
+  | ftp         |
+  | rtsp, rtspu |
+  | file        |
+  | news        |
+  | telnet      |
 
 ### 호스트와 포트
 
@@ -160,7 +160,7 @@ tags:
 - 위의 a태그의 href 속성이 절대 URL 을 표시하지 않고, 최종경로만을 표시하였다.
 - 개발시, 해당 리소스를 호스팅하는 Base URL을 기반으로 스스로 URL을 설정하는 알고리즘을 통해 클라이언트에서 올바른 리소스를 요청할 수 있게 해준다.
 
-![상대 URL 알고리즘](../assets/img/2024-04-10-relativeURLalgorithm.png "상대 URL 정의 알고리즘  /출처 : 도서 - 오레일리, HTTP 완벽 가이드 ")
+![상대 URL 알고리즘](../assets/img/post/2024-04-10/2024-04-10-relativeURLalgorithm.png "상대 URL 정의 알고리즘  /출처 : 도서 - 오레일리, HTTP 완벽 가이드 ")
 
 
 ## URN
