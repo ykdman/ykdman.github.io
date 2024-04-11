@@ -27,9 +27,9 @@ tags:
 
 1. github에 가입부터한다 (나는 원래 있다!)
 2. 'New' 로 표시된 버튼을 눌러 New Repository 생성 페이지로 이동
-    ![new repo](../assets/img/post/2024-04-11//2024-04-11-github-NewRepo.jpg)
+    ![new repo](../assets/img/post/2024-04-11/2024-04-11-github-NewRepo.jpg)
 3. 새로 생성할 프로젝트의 속성에 맞게 설정해준다.
-    ![new repo2](../assets/img/post/2024-04-11//2024-04-11-github-NewRepo2.jpg)
+    ![new repo2](../assets/img/post/2024-04-11/2024-04-11-github-NewRepo2.jpg)
 
 4. 새로운 Repository 생성!
   
