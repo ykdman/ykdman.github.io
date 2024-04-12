@@ -79,12 +79,12 @@ $ git branch -r
 - merge commit 도 생성 되기 때문에, 히스토리 관리에 상당히 용이하다.
 
   #### Merge 후
-  | Merge |
-  | ----- |
-  | a     |
-  | b'    |
-  | 충돌  |
-  | d'    |
+  | Merge |     | 상태           |
+  | ----- | --- |
+  | a     |     | 정상 from Base |
+  | b'    |     | 정상 from A    |
+  | 충돌  |     | Conflict       |
+  | d'    |     | 정상 from B    |
   
   - 위와 같이 여러 작업자가 작업을 해도, 공통 조상을 통해 COnflict(충돌) 이 발생한 지점을 쉽게 알고 해결 할 수 있다.
 
