@@ -166,6 +166,9 @@ $ git branch -r
   
   ![conflict3](../assets/img/post/2024-04-12/conflict3.png)
 
+9. Git history
+  ![history](../assets/img/post/2024-04-12/history.png)
+
 
 ### 📖 회고
 
