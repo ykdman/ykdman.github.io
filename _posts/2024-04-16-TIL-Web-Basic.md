@@ -16,7 +16,7 @@ tags:
 <!-- 
 ![www](../assets/img/post/2024-04-16/www.png){: width="50%" height="70%"}{: .align-center} -->
 <div align="center">
-<img src="../assets/img/post/2024-04-16/www.png"  width="50%" height="60%" />
+<img src="../assets/img/post/2024-04-16/www.png"  width="50%" height="60%" alt="www"/>
 </div>
 
 
