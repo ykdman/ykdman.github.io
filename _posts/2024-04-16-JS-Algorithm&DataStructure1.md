@@ -101,3 +101,18 @@ function solution(str) {
 
 문제를 정해진 기간안에 해결하였다면, 우리는 이제 해결의 퀄리티를 높여야 한다!  
 해결의 해결의 해결까지 해보는 것이다!
+
+
+## ⑥ 문제 해결 접근법
+1. 문제를 위한 계획을 세운다.
+2. 일반적인 문제 해결 패턴 (알고리즘 패턴) 을 습득한다.
+
+## ⑦ 문제 해결 패턴
+- Frequency Counter (빈도수 세기)
+- Multiple Pointer
+- Sliding Window
+- Divide And Conquer (분할과 정복)
+- Dynamic Programming
+- Greedy Algorithm (탐욕 알고리즘)
+- Back Tracking
+- +…. 그외의 많은 패턴
