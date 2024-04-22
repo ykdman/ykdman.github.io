@@ -123,7 +123,7 @@ CREATE DATABASE Tennis;
 USE Tennis;
 ```
 
-![use-database](../assets//img/post/2024-04-19/use-database.png)
+![use-database](../assets/img/post/2024-04-19/use-database.png)
 
 ### Table 만들기
 
