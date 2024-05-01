@@ -19,7 +19,7 @@ timezone: Asia/Seoul
 
 title: ykdman dev blog # the main title
 
-tagline: Life For Devleop # it will display as the sub-title
+tagline: ykdman 개발 블로그 # it will display as the sub-title
 
 description: Technical & TroubleShooting Log, And Life # used by seo meta and the atom feed
 
