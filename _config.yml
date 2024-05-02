@@ -127,7 +127,7 @@ assets:
     enabled: true # boolean, keep empty means false
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
-    env: development # [development | production]
+    env: production # [development | production]
 
 pwa:
   enabled: true # the option for PWA feature (installable)
@@ -142,7 +142,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+baseurl: "/ykdman.github.io"
 
 plugins:
   - jekyll-seo-tag
