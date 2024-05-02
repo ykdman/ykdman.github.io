@@ -340,7 +340,7 @@ export default App;
                   id: product.id,
                   title: product.name,
                   quantity: product.quantity,
-                  total: product.quantity * product.price,
+                  total: product.quantity*product.price,
                   price: product.price,
                 }}
               />
