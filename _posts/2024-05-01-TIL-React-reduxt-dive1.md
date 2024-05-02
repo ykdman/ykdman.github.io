@@ -89,7 +89,7 @@ function App() {
 
   return (
     <Layout>
-      {showCart && <Cart />}  {/*Cart Toggle*/}
+      {showCart && <Cart />} 
       <Products />
     </Layout>
   );
@@ -258,11 +258,7 @@ export default App;
                 />
               );
             })}
-            {/* <ProductItem
-              title="Test"
-              price={6}
-              description="This is a first product - amazing!"
-            /> */}
+
           </ul>
         </section>
       );
@@ -340,14 +336,12 @@ export default App;
                   id: product.id,
                   title: product.name,
                   quantity: product.quantity,
-                  total: product.quantity*product.price,
+                  total: (product.quantity x product.price),
                   price: product.price,
                 }}
               />
-            ))}
-            {/* <CartItem
-              item={{ title: 'Test Item', quantity: 3, total: 18, price: 6 }}
-            /> */}
+            ))};
+
           </ul>
         </Card>
       );
