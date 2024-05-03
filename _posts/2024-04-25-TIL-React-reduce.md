@@ -1,7 +1,7 @@
 ---
 title: React reduce 사용해보기
 date: 2024-04-25 16:40:00 +09:00
-categories: [TIL, React]
+categories: [JS, React]
 tags:
   [
     TIL,

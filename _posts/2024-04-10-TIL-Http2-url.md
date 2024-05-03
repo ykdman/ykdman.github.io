@@ -1,7 +1,7 @@
 ---
-title: TIL Http가이드 2-url
+title: Http 완벽 가이드 2 - url
 date: 2024-04-10 23:00:00 +09:00
-categories: [TIL, Http]
+categories: [Network, Http]
 tags:
   [
     TIL,
@@ -14,6 +14,7 @@ tags:
     URL,
     Resource
   ]
+image: ../assets/img/common/Http-완벽-가이드.jpg
 ---
 ## 📚목차
 - [📚목차](#목차)

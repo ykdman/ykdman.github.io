@@ -1,7 +1,7 @@
 ---
 title: React context 사용해보기
 date: 2024-04-25 13:40:00 +09:00
-categories: [TIL, React]
+categories: [JS, React]
 tags:
   [
     TIL,
