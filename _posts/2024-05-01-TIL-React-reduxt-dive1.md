@@ -339,7 +339,7 @@ export default App;
                   total: (product.quantity x product.price),
                   price: product.price,
                 }}
-              />
+              / >
             ))};
 
           </ul>
