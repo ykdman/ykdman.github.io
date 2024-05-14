@@ -271,3 +271,151 @@ export default function Homepage() {
     }
     
     ```
+## react-router-dom 으로 에러페이지 렌더링하기
+
+```jsx
+// 라우터를 정의하기위한 router 라이브러리 함수
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import ProductPage from "./pages/Products";
+import RootLayout from "./components/RootLayout";
+import ErrorPage from "./pages/Error";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    errorElement: <ErrorPage />, //error page를 렌더링
+    children: [
+      { path: "/", element: <Homepage /> },
+      { path: "/products", element: <ProductPage /> },
+    ],
+  },
+]);
+
+function App() {
+  return <RouterProvider router={router} />;
+}
+
+export default App;
+
+```
+
+- createBrowserRouter 의 속성 중, `errorElement` 속성을 통해 잘못된 url 요청으로 인해 표시할 error Page를 지정할 수 있다.
+
+## NavLink 사용
+
+NavLink는 특정 링크에 스타일을 넣어주는 기능을 가지고 있다.
+
+해당 기능외에는 Link 태그와 기능상 다른점이 없다.
+
+NavLink로 지정된 path, 즉 사용자가 현재 접속하고있는 URL 과, NavLink 태그가 지정한 Path가 같으면, 해당 태그에 active적인 스타일을 부여 할 수 있다는 것.
+
+- className 프로퍼티에 콜백 함수를 사용하며 인수로 isActive를 활용하여 동적 스타일링이 가능
+
+```jsx
+import { Link, NavLink } from "react-router-dom";
+import classes from "./MainNavigation.module.css";
+
+function MainNavigation() {
+  return (
+    <header className={classes.header}>
+      <nav>
+        <ul className={classes.list}>
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+              end
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/products"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
+              Product
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+
+export default MainNavigation;
+
+```
+
+- NavLink 의 className 속성 중 `isActive` 객체를 수신하여 그에 따른 스타일을 지정한다.
+- isActive외에도 isPending, isTransitioning 객체를 받으며, 인수로 받을 때 {} 로 감싸주어야 사용가능하다.
+- end 속성은 to로 지정된 URL로 정확히 끝나는것을 확인한다.
+
+## useNavigate를 사용한 navigating
+
+- react-router-dom 의 useNavigate 훅을 사용
+- 실행시에, 인수로 지정된 URL 페이지로 이동할 수 있게해주는 함수를반환
+- 함수 호출을 통해 페이지를 이동하므로, 사용자의 수동 페이지 이동없이 특정 조건을 완료하였을 때, 페이지를 이동시키는 경우 사용하기 용이하다.
+
+```jsx
+import {useNavigate} from 'react-router-dom'
+function NavBar() {
+	const navigate = useNavigate();
+	
+	function navigateHome () {
+		navigate("/home")
+	}
+}
+```
+
+## 동적 라우트 정의 및 사용
+
+- app.js
+    
+    ```jsx
+    
+    const router = createBrowserRouter([
+      {
+        path: "/",
+        element: <RootLayout />,
+        errorElement: <ErrorPage />,
+        children: [
+          { path: "/", element: <Homepage /> },
+          { path: "/products", element: <ProductPage /> },
+          { path: "/products/:productId", element: <ProductDetail /> },
+        ],
+      },
+    ]);
+    ```
+    
+    `:`를 이용하여 express의 params를 받은것과 같이, 동적 라우팅을 정의한다.
+    
+- ProductDetail.js
+    
+    ```jsx
+    import { useParams } from "react-router-dom";
+    
+    function ProductDetail() {
+      const params = useParams();
+    
+      return (
+        <>
+          <h1>Product Detail</h1>
+          <p>{params.productId}</p>
+        </>
+      );
+    }
+    
+    export default ProductDetail;
+    
+    ```
+    
+    useParams hook을 react-router-dom에서 import 하여 이전에 app.js에서 지정한 params를 사용할 수 있다. (ReadOnly)
+    
+    params로 지정한 url 값은 useParams를 통해 할당한 변수에 객체로 들어가게 된다.
