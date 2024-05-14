@@ -123,7 +123,7 @@ RouterProvider 까지 import 후에 createBrowseRouter로 선언한 router를 Ro
     
 - /test 접속 화면
     
-    ![react-router-test](../assets/img/post/2024/05/13/react-router-test.png)
+  ![react-router-test](../assets/img/post/2024/05/13/react-router-test.png)
     
 
 ### 구버전 Router 정의 방식
@@ -152,7 +152,7 @@ function App() {
 
 ### Link 태그를 이용한 페이지 전환 방법
 
-- 기본 <a> 태그를 이용하게 되면, 페이지를 전환하면서, client 의 상태를 잃어버릴수 있다.
+- 기본 \<a> 태그를 이용하게 되면, 페이지를 전환하면서, client 의 상태를 잃어버릴수 있다.
     - 새로운 Http 요청을 전송하기 때문
 - react-router-dom에서 Link를 import하여 페이지 전환 트리거에 사용
     - Link는 새로운 Http 요청을 전송하지 않고 라우트 정의만을 확인하여 이동 시킨다.
