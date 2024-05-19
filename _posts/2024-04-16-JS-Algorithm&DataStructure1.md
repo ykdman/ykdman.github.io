@@ -9,8 +9,9 @@ tags:
     Algorithm,
     DataStructure
   ]
+image: ../assets/img/common/JavaScript-logo.png
 ---
-![js-logo](../assets/img/common/JavaScript-logo.png "jslogo")
+
 
 # 시작
 이제 JS로 알고리즘 및 자료구조 공부를 시작한다.(2024-04-16)  
