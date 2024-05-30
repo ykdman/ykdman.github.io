@@ -14,6 +14,9 @@ tags:
 image: ../assets/img/common/JavaScript-logo.png
 ---
 
+- 모든 과정 참고 : [JSINFO](https://ko.javascript.info/async-await)
+
+
 # JS의 Promise와 async/await 알아보기
 
 > Promise는 시간이 소비에 상관없이 `약속` 한 결과를 만들어내는 문법이다.
