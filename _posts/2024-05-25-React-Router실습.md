@@ -1,7 +1,7 @@
 ---
 title: React router 실습 해보기
 date: 2024-05-25 20:40:00 +09:00
-categories: [JS, React]
+categories: [TIL,React]
 tags:
   [
     TIL,
